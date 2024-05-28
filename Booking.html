@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="user_account.html">User Account</a></li>
+            <li><a href="#" id="registrationLink">Registration</a>
+                <ul id="registrationOptions" class="submenu">
+                    <li><a href="5KM.html">5KM</a></li>
+                    <li><a href="10KM.html">10KM</a></li>
+                    <li><a href="20km.html">20KM</a></li>
+                    <li><a href="40km.html">40KM</a></li>
+                    <li><a href="80km.html">80KM</a></li>
+                </ul>
+            </li>
+            <li><a href="./Volunteer.html">Volunteer</a></li>
+            <li><a href="./Booking.html">Booking</a></li>
+            <li><a href="#">Shuttle Bus</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Booking</h1>
+        <table id="bookingTable" class="display">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Date Regis</th>
+                    <th>Room</th>
+                    <th>Price</th>
+                    <th>Days</th>
+                    <th>Total Harga</th>
+                    <th>Full Name</th>
+                    <th>Status</th>
+                    <th>Detail</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2024-05-01</td>
+                    <td>Single Room</td>
+                    <td>$100</td>
+                    <td>3</td>
+                    <td>$300</td>
+                    <td>John Doe</td>
+                    <td>Confirmed</td>
+                    <td><a href="#">View</a></td>
+                    <td><button>Action</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2024-05-02</td>
+                    <td>Double Room</td>
+                    <td>$150</td>
+                    <td>2</td>
+                    <td>$300</td>
+                    <td>Jane Smith</td>
+                    <td>Pending</td>
+                    <td><a href="#">View</a></td>
+                    <td><button>Action</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#bookingTable').DataTable();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
